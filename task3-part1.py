@@ -37,7 +37,7 @@ def processMovement(input, coordinates, coordinates2, crossingWires):
                 X += 1
                 coordinates.append((X,Y))
 
-                if (X,Y) in coordinates2:
+                if (X,Y) in coordinates2 and (X,Y) not in crossingWires:
                     crossingWires.append((X,Y))
                     print(f"found: {(X,Y)}")
                     pass
@@ -49,7 +49,7 @@ def processMovement(input, coordinates, coordinates2, crossingWires):
                 X -= 1
                 coordinates.append((X,Y))
 
-                if (X,Y) in coordinates2:
+                if (X,Y) in coordinates2 and (X,Y) not in crossingWires:
                     crossingWires.append((X,Y))
                     print(f"found: {(X,Y)}")
                     pass
@@ -61,7 +61,7 @@ def processMovement(input, coordinates, coordinates2, crossingWires):
                 Y += 1
                 coordinates.append((X,Y))
 
-                if (X,Y) in coordinates2:
+                if (X,Y) in coordinates2 and (X,Y) not in crossingWires:
                     crossingWires.append((X,Y))
                     print(f"found: {(X,Y)}")
                     pass
