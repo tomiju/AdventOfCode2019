@@ -100,5 +100,6 @@ for value in crossingWires:
     pass
 
 print(f"\nAnswer: {min}")
+
 #print(f"List1: {coordinates1}\n\n")
 #print(f"List2: {coordinates2}")
